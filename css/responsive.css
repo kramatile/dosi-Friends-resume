@@ -1,0 +1,145 @@
+@media only screen and (min-width: 901px) {
+  #wrapper {
+    width: 80%;
+  }
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header img {
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+  }
+  #header .title {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #wrapper {
+    width: 90%;
+    background-color: #e8e8e8;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #header img {
+    width: 150px;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  #header .title h1 {
+    font-size: 2.2rem;
+  }
+
+  #header .title h2 {
+    font-size: 1.2rem;
+  }
+
+  #header ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  section {
+    margin-top: 30px;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  body {
+    font-size: 0.95em;
+  }
+
+  #wrapper {
+    width: 95%;
+    background-color: #f8f8f8;
+  }
+
+  #header ul {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  #header img {
+    width: 120px;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+
+  #skills > ul > li {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  #wrapper {
+    background-color: #e2e2e2;
+  }
+
+  #header .title h1 {
+    font-size: 1.8rem;
+  }
+
+  #header .title h2 {
+    font-size: 1rem;
+  }
+
+  #header img {
+    width: 100px;
+  }
+
+  #links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #wrapper {
+    width: 100%;
+    background-color: #dcdcdc;
+  }
+
+  #header .title h1 {
+    font-size: 1.6rem;
+  }
+
+  #header .title h2 {
+    font-size: 0.9rem;
+  }
+
+  #header img {
+    width: 90px;
+  }
+
+  #header ul {
+    font-size: 0.9em;
+  }
+
+  #skills ul ul {
+    margin-left: 1em;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
