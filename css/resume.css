@@ -207,6 +207,35 @@ text-transform: uppercase;
   margin: 1.5em 0;       
 }
 
+.corpName{
+    width: 100%;
+    padding:10px;
+    background-color: aliceblue;
+    transition: all 0.4s ease-in-out;
+}
+
+.corpName:hover{
+    background-color: rgb(191, 196, 191);
+
+}
+
+.corpDesc {
+  position: fixed;
+  background: rgba(34, 34, 34, 0.9);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  display: none;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+.corpDesc.visible {
+  display: block;
+  opacity: 1;
+}
+
 footer {
     background-color: #222;
     color: white;
@@ -248,7 +277,7 @@ footer {
 
 #links li:hover svg {
     transform: scale(1.2);
-    fill: #00acee; /* accent color */
+    fill: #00acee;
 }
 
 #links li:hover a {
