@@ -59,3 +59,17 @@ Ces règles ajustent la disposition, la taille des images et la mise en page sel
 ## Micro-données
 Dans cette partie du TP, j’ai intégré des micro-données `Schema.org` dans le CV afin d’enrichir sa structure sémantique.
 J’ai utilisé les attributs `itemscope`, `itemtype`, `itemprop`, `itemid` et itemref pour décrire la personne, ses compétences, sa formation et ses expériences.
+
+
+
+# Java Script
+On a ajouté l'aspect dynamique à notre site web.
+## Apparition des descriptions :
+    L'apparition des déscriptions dans la partie formation est dynamiques
+
+## Apparition des descriptions détaillés :
+    L'apparition des déscriptions des entreprises ce fait quand on passe le curseur dessus.
+
+## Auto-évaluation des connaissances :
+    Les étoiles apparaissent grace au script js 
+    de meme pour le graphe en fin de séction.
