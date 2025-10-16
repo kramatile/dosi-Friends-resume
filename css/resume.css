@@ -172,6 +172,23 @@ text-transform: uppercase;
   border-top: 1px solid #0e0d0d;
   margin: 8px 0;
 }
+.stars { display:inline-flex; gap:2px; vertical-align:middle; }
+.stars .fa { opacity: .35; }
+a.stars .checked { opacity: 1; }
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+.chart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #skills > ul {
     list-style-type: none; 

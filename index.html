@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/resume.css">
 
@@ -72,14 +72,30 @@
             <h2>Competences</h2>
             <ul>
 
-                <li>Boulangerie "meilleur artisan marocain": 
+                <li>
+                    <div id="Boulangerie">
+                        Boulangerie "meilleur artisan marocain": 
+                        <div class="stars">
+                        </div>
+                    </div>
                     <ul>
                         <li itemprop="skill">Pain au chocolat</li>
                         <li itemprop="skill">Baba au Rhum</li>
                         <li itemprop="skill">Eclairs au chocolat</li>
                     </ul>
                 </li>
-                  <li>Conception mécanique :
+                  <li>
+                    <div>
+                        <div id="Conception">
+                            Conception mécanique :
+                            <div class="stars">
+                                
+                            </div>
+                        </div>
+                      
+                    </div>
+                   
+                   
                     <ul>
                         <li itemprop="skill">Modélisation 3D CAO (SolidWorks, CATIA, Autodesk Inventor)</li>
                         <li itemprop="skill">Dessin technique et mise en plan 2D (AutoCAD)</li>
@@ -89,7 +105,12 @@
                     </ul>
                 </li>
 
-                <li>Analyse par éléments finis (FEA) :
+                <li >
+                    <div id="Fea">
+                        Analyse par éléments finis (FEA) :
+                        <div class="stars">
+                        </div>
+                    </div>
                     <ul>
                         <li itemprop="skill">Analyse statique et dynamique des structures</li>
                         <li itemprop="skill">Analyse thermique</li>
@@ -98,7 +119,13 @@
                     </ul>
                 </li>
 
-                <li>Thermodynamique et transfert de chaleur :
+                <li>
+                    <div id="Thermo">
+                        Thermodynamique et transfert de chaleur :
+                        <div class="stars">
+                        </div>
+                    </div>
+                   
                     <ul>
                         <li itemprop="skill">Échangeurs thermiques et systèmes de refroidissement</li>
                         <li itemprop="skill">Écoulement des fluides et systèmes énergétiques</li>
@@ -107,6 +134,10 @@
                     </ul>
                 </li>
             </ul>
+            <div class="chart">
+                <canvas id="skillsChart" width="500" height="300"
+            style="border:1px solid #ccc; margin-top:20px;"></canvas>
+            </div>
         </section>
         <section id="experiences">
             <h2>Experiences Professionnelles</h2>
