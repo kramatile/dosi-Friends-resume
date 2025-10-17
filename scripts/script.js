@@ -8,15 +8,13 @@
 //       ]
 //     };
 
-let data = null;
+let data = {skills:[]};
 
 async function loadSkills() {
   try {
-    const response = await fetch("skills.json");
+    const response = await fetch("./scripts/skills.json");
     if (!response.ok) throw new Error("HTTP error " + response.status);
     data = await response.json();
-    stars();
-    drawHistogram();
   } catch (err) {
     console.error("Error loading skills.json:", err);
   }
@@ -95,7 +93,7 @@ function drawHistogram() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",async  () => {
   clickDescription();
   const corps = document.querySelectorAll("article > h3.corpName");
   corps.forEach(corp => {
@@ -122,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
   });
-  loadSkills();
+  await  loadSkills();
   stars();
   drawHistogram();
 });
