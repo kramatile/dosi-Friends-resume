@@ -1,0 +1,8 @@
+{
+      "skills": [
+        { "id": "Boulangerie", "niveau": 2 },
+        { "id": "Conception", "niveau": 5 },
+        { "id": "Fea", "niveau": 4 },
+        { "id": "Thermo", "niveau": 4 }
+      ]
+}

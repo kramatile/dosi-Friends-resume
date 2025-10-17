@@ -1,12 +1,26 @@
 
-const data = {
-      "skills": [
-        { "id": "Boulangerie", "niveau": 2 },
-        { "id": "Conception", "niveau": 5 },
-        { "id": "Fea", "niveau": 4 },
-        { "id": "Thermo", "niveau": 4 }
-      ]
-    };
+// const data = {
+//       "skills": [
+//         { "id": "Boulangerie", "niveau": 2 },
+//         { "id": "Conception", "niveau": 5 },
+//         { "id": "Fea", "niveau": 4 },
+//         { "id": "Thermo", "niveau": 4 }
+//       ]
+//     };
+
+let data = null;
+
+async function loadSkills() {
+  try {
+    const response = await fetch("skills.json");
+    if (!response.ok) throw new Error("HTTP error " + response.status);
+    data = await response.json();
+    stars();
+    drawHistogram();
+  } catch (err) {
+    console.error("Error loading skills.json:", err);
+  }
+}
 
 
 function clickDescription() {
@@ -108,6 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
   });
+  loadSkills();
   stars();
   drawHistogram();
 });
